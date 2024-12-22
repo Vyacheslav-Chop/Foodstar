@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+  <div class="backdrop is-open">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">
+        <svg class="modal-btn-close-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-text">Order Form</p>
+      <form class="modal-form">
+        <div class="modal-form-field">
+          <label for="">Name</label>
+          <input type="text">
+        </div>
+        <div class="modal-form-field">
+          <label for="">Phone number</label>
+          <input type="text">
+        </div>       
+        <div class="modal-form-field">
+          <label for="">E-mail</label>
+          <input type="text">
+        </div>
+        <button class="modal-form-btn" type="submit">Send</button>              
+      </form>
+    </div>
+  </div>
+</body>
+</html>
