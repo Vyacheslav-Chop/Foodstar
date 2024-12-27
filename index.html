@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -18,36 +18,75 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-  <div class="backdrop is-open">
-    <div class="modal">
-      <button class="modal-btn-close" type="button">
-        <svg class="modal-btn-close-icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-close"></use>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container">
+        <nav class="nav-header">
+          <a class="nav-logo" href="index.html">
+            <svg class="nav-logo-icon" width="66" height="52">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-item-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Service</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="btn header-btn" type="button">Order Now</button>
+        <button class="btn-menu" type="button" data-menu-open>
+          <svg class="btn-menu-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
-      <p class="modal-text">Order Form</p>
-      <form class="modal-form">
-        <div class="modal-form-field">
-          <label for="">Name</label>
-          <input type="text">
-        </div>
-        <div class="modal-form-field">
-          <label for="">Phone number</label>
-          <input type="text">
-        </div>       
-        <div class="modal-form-field">
-          <label for="">E-mail</label>
-          <input type="text">
-        </div>
-        <button class="modal-form-btn" type="submit">Send</button>              
-      </form>
+      </div>
+      <div class="menu" data-menu>
+        <button class="menu-btn-close" type="button" data-menu-close>
+          <svg class="menu-btn-close-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-nav-list">
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="index.html">Home</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">About</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">Service</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">Menu</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">Contact</a></li>
+          </ul>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg class="modal-btn-close-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Order Form</p>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label for="">Name</label>
+            <input type="text" />
+          </div>
+          <div class="modal-form-field">
+            <label for="">Phone number</label>
+            <input type="text" />
+          </div>
+          <div class="modal-form-field">
+            <label for="">E-mail</label>
+            <input type="text" />
+          </div>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
